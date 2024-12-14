@@ -69,17 +69,21 @@ nav {
   margin-bottom: 20px;
 }
 
+/* Button hover effect */
 .btn {
   background-color: #ff6347;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 
 .btn:hover {
   background-color: #e53e39;
+  transform: scale(1.1);
 }
+
 
 /* About Section */
 #about {
@@ -150,13 +154,18 @@ nav {
   margin-bottom: 10px;
 }
 
+
+/* Project link hover effect */
 .project a {
   color: #ff6347;
   font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .project a:hover {
   color: #e53e39;
+  text-decoration: underline;
 }
 
 /* Contact Section */
@@ -182,6 +191,28 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* Progress bar container */
+.progress-container {
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Progress bar itself */
+.progress {
+  background-color: #1e2a47;
+  height: 20px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 20px 0 0 20px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
