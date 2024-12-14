@@ -37,4 +37,3 @@ toggleButtons.forEach(button => {
     }
   });
 });
-
