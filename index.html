@@ -7,6 +7,84 @@
   <title>My Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Timeline Section */
+    .timeline-container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .timeline-event {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #2b7df7;
+      color: white;
+      cursor: pointer;
+    }
+
+    .timeline-header span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-details {
+      display: none;
+      padding: 15px 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .timeline-details img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    /* Active Class */
+    .timeline-event.active .timeline-details {
+      display: block;
+    }
+
+    .timeline-event.active .toggle-btn {
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -39,24 +117,23 @@
 
   <!-- Skills Section -->
   <section id="skills">
-  <h2>Skills</h2>
-  <div class="progress-container">
-    <div class="progress" style="width: 90%;">HTML (90%)</div>
-  </div>
-  <div class="progress-container">
-    <div class="progress" style="width: 85%;">CSS (85%)</div>
-  </div>
-  <div class="progress-container">
-    <div class="progress" style="width: 70%;">JavaScript (70%)</div>
-  </div>
-  <div class="progress-container">
-    <div class="progress" style="width: 60%;">React (60%)</div>
-  </div>
-  <div class="progress-container">
-    <div class="progress" style="width: 50%;">Node.js (50%)</div>
-  </div>
-</section>
-
+    <h2>Skills</h2>
+    <div class="progress-container">
+      <div class="progress" style="width: 90%;">HTML (90%)</div>
+    </div>
+    <div class="progress-container">
+      <div class="progress" style="width: 85%;">CSS (85%)</div>
+    </div>
+    <div class="progress-container">
+      <div class="progress" style="width: 70%;">JavaScript (70%)</div>
+    </div>
+    <div class="progress-container">
+      <div class="progress" style="width: 60%;">React (60%)</div>
+    </div>
+    <div class="progress-container">
+      <div class="progress" style="width: 50%;">Node.js (50%)</div>
+    </div>
+  </section>
 
   <!-- Projects Section -->
   <section id="projects">
@@ -76,46 +153,39 @@
       <p>Project Lead of Framework to Optimise Arena 2036 Shop Floor in Stuttgart Germany.</p>
       <a href="link-to-project" target="_blank">View Project</a>
     </div>
-    <!-- Add more projects here -->
   </section>
 
-
-
-  
-<section id="timeline">
-  <h2>Timeline</h2>
-  <div class="timeline-container">
-    <!-- Event 1 -->
-    <div class="timeline-event">
-      <div class="timeline-header">
-        <span>June 2024</span>
-        <button class="toggle-btn">▼</button>
+  <!-- Timeline Section -->
+  <section id="timeline">
+    <h2>Timeline</h2>
+    <div class="timeline-container">
+      <!-- Event 1 -->
+      <div class="timeline-event">
+        <div class="timeline-header">
+          <span>June 2024</span>
+          <button class="toggle-btn">▼</button>
+        </div>
+        <div class="timeline-details">
+          <p>Started working on an exciting AI project for edge devices.</p>
+          <img src="path-to-image.jpg" alt="Event image">
+        </div>
       </div>
-      <div class="timeline-details">
-        <p>Started working on an exciting AI project for edge devices.</p>
-        <img src="path-to-image.jpg" alt="Event image">
+
+      <!-- Event 2 -->
+      <div class="timeline-event">
+        <div class="timeline-header">
+          <span>April 2023</span>
+          <button class="toggle-btn">▼</button>
+        </div>
+        <div class="timeline-details">
+          <p>Attended the international robotics conference in Berlin, presenting my research on point cloud segmentation.</p>
+          <img src="path-to-image.jpg" alt="Event image">
+        </div>
       </div>
+
+      <!-- Add more events as needed -->
     </div>
-
-    <!-- Event 2 -->
-    <div class="timeline-event">
-      <div class="timeline-header">
-        <span>April 2023</span>
-        <button class="toggle-btn">▼</button>
-      </div>
-      <div class="timeline-details">
-        <p>Attended the international robotics conference in Berlin, presenting my research on point cloud segmentation.</p>
-        <img src="path-to-image.jpg" alt="Event image">
-      </div>
-    </div>
-
-    <!-- Add more events here -->
-  </div>
-</section>
-
-
-
-  
+  </section>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -124,9 +194,20 @@
   </section>
 
   <footer>
-    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2024 Sheharyar Faisal. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script -->
+  <script>
+    // Timeline Toggle Script
+    const timelineHeaders = document.querySelectorAll('.timeline-header');
+
+    timelineHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const event = header.parentElement;
+        event.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
