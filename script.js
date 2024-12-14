@@ -19,4 +19,22 @@ window.addEventListener("load", () => {
     heroText.style.transform = "translateY(0)";
   }, 500);
 });
+// Get all toggle buttons
+const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+// Add click event to toggle details
+toggleButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    const details = this.parentElement.nextElementSibling;
+
+    // Toggle the visibility of the details
+    if (details.style.display === 'block') {
+      details.style.display = 'none';
+      this.textContent = '▼'; // Change arrow back
+    } else {
+      details.style.display = 'block';
+      this.textContent = '▲'; // Change arrow to up
+    }
+  });
+});
 
