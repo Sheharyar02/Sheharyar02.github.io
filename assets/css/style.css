@@ -930,6 +930,19 @@ textarea.contact-input {
     100% { transform: rotate(1turn); }
   }
 
+/* Style for the toggle button */
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: yellow;  /* Set text color to yellow */
+  font-size: 16px;  /* Adjust the font size as needed */
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.toggle-btn:hover {
+  color: #ffcc00;  /* Optional: change color on hover */
+}
 
 
   /**
@@ -1040,7 +1053,144 @@ textarea.contact-input {
     gap: 25px;
   }
 
+/*-----------------------------------*\
+  #TIMELINE
+\*-----------------------------------*/
+
+.timeline {
+  position: relative;
+  padding-top: 80px;
+  list-style: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  bottom: 0;
+  width: 4px;
+  background: var(--cadet-blue-crayola);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -6px;
+  width: 12px;
+  height: 12px;
+  background: var(--orange-soda);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -6px;
+}
+
+.timeline-title {
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-3);
+  color: var(--white);
+  margin-bottom: 5px;
+}
+
+/* Timeline content */
+.timeline-content {
+  background: var(--independence);
+  padding: 15px;
+  border-radius: var(--radius-10);
+  color: var(--cadet-blue-crayola);
+  display: block; /* Make sure it's displayed as block */
+  max-height: 0; /* Start with no height for collapse */
+  overflow: hidden; /* Hide content when collapsed */
+  opacity: 0; /* Start with invisible content */
+  transition: all 0.3s ease; /* Smooth transition for expanding/collapsing */
+}
+/* When timeline content is visible */
+.timeline-content:not([hidden]) {
+  max-height: 1000px; /* Set a high value to allow full content expansion */
+  opacity: 1; /* Make content fully visible */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure that hidden attribute hides the content */
+.timeline-content[hidden] {
+  display: none; /* Hide the content when [hidden] is set */
+}
+
+ /**
+   * Contact
+   */
+
+   .contact-icons {
+    padding: 40px 0;
+    background-color: var(--independence); /* Adjust as needed */
+    text-align: center;
+  }
   
+  .contact-icons .section-title {
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-2);
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cadet-blue-crayola);
+    font-size: 16px;
+  }
+  
+  .icon-link i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    /* color: var(--orange-soda); Adjust icon color */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon-link span {
+    font-family: var(--ff-poppins);
+    font-size: 18px;
+  }
+  
+  .icon-link:hover i {
+    color: var(--white); /* Hover color */
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
+  
+
+
+
+
+
 
   /**
    * FOOTER
