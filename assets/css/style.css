@@ -440,6 +440,20 @@ body {
 
 
 
+
+.paper-link {
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+}
+.paper-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
