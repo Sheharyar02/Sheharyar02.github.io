@@ -6,6 +6,7 @@ x`<!DOCTYPE html>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <title>Sheharyar Faisal - Perception Robotics Engineer</title>
 
@@ -200,96 +201,118 @@ x`<!DOCTYPE html>
       <!-- 
         - #PORTFOLIO
       -->
+<section class="section portfolio" id="portfolio">
+  <div class="container">
 
-      <section class="section portfolio" id="portfolio">
-        <div class="container">
+    <p class="section-subtitle">Portfolio</p>
+    <h2 class="h2 section-title">Projects</h2>
+    <p class="section-text">A selection of projects I've worked on.</p>
 
-          <p class="section-subtitle">Portfolio</p>
+    <div class="projects-grid">
 
-          <h2 class="h2 section-title">Check out My Amazing Works</h2>
-
-          <p class="section-text">
-           V
-          </p>
-
-          <ul class="portfolio-list">
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
-                <div class="card-content">
-
-                  <!--<p class="card-subtitle">Youtube</p>-->
-
-                  <h3 class="h3 card-title">Defect Detection in Manufacturing Lines</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
-                <div class="card-content">
-
-                 <!-- <p class="card-subtitle">Vimeo</p>-->
-
-                  <h3 class="h3 card-title">Critical Region Identification in Images</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
-                <div class="card-content">
-
-                 <!-- <p class="card-subtitle">Soundcloud</p>-->
-
-                  <h3 class="h3 card-title">Optimisation of Shop Floor</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Details</p>
-
-                  <h3 class="h3 card-title">Synthetic 3D Data Generation</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-          </ul>
-
+      <div class="project-card" data-project="defect">
+        <img src="./assets/images/Defect.png" alt="Defect Detection" class="project-image">
+        <div class="project-info">
+          <h3 class="h3 project-title">Defect Detection in Manufacturing Lines</h3>
+          <p class="project-short">AI-based defect classification on manufacturing data.</p>
+          <div class="tech-tags">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">Pywavelets</span>
+          <span class="tag">3D Point Cloud</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Open3d</span>
         </div>
-      </section>
+      </div>
+    </div>
+
+      <div class="project-card" data-project="critical">
+        <img src="./assets/images/Critical.png" alt="Critical Region Identification" class="project-image">
+        <div class="project-info">
+          <h3 class="h3 project-title">Critical Region Identification</h3>
+          <p class="project-short">Image-based detection of critical regions for quality control.</p>
+          <div class="tech-tags">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">ML</span>
+          <span class="tag">Pytorch</span>
+          <span class="tag">Open3d</span>
+        </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="optimisation">
+        <img src="./assets/images/SpFloor.png" alt="Shop Floor Optimisation" class="project-image">
+        <div class="project-info">
+          <h3 class="h3 project-title">Shop Floor Optimisation</h3>
+          <p class="project-short">Improved layout and flow using data analysis.</p>
+          <div class="tech-tags">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">ML</span>
+          <span class="tag">Pytorch</span>
+          <span class="tag">Open3d</span>
+          <span class="tag">3D Deep Learning</span>
+          <span class="tag">Point Net</span>
+          <span class="tag">Clustering</span>
+          <span class="tag">ROS</span>
+        </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-project="synthetic">
+        <img src="./assets/images/portfolio-4.jpg" alt="Synthetic 3D Data Generation" class="project-image">
+        <div class="project-info">
+          <h3 class="h3 project-title">Synthetic 3D Data Generation</h3>
+          <p class="project-short">Procedurally generated data for AI training.</p>
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">ML</span>
+            <span class="tag">Pytorch</span>
+            <span class="tag">Open3d</span>
+            <span class="tag">3D Deep Learning</span>
+            <span class="tag">3D GAN</span>
+            <span class="tag">Generative AI</span>
+          
+          </div>
+        </div>
+      </div> 
+
+      <div class="project-card" data-project="Car">
+        <img src="./assets/images/Ai_Car.jpeg" alt="Autonomous Car" class="project-image">
+        <div class="project-info">
+          <h3 class="h3 project-title">Ai Based Autonomous UGV</h3>
+          <p class="project-short">Procedurally generated data for AI training.</p>
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">ML</span>
+            <span class="tag">TensorRT</span>
+            <span class="tag">Pixhawk</span>
+            <span class="tag">3D Deep Learning</span>
+            <span class="tag">ROS2</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Embedded Systems</span>
+          
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="project-modal" id="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+  </div>
+</div>
 
 
 
@@ -298,174 +321,65 @@ x`<!DOCTYPE html>
       <!-- 
         - #SKILLS
       -->
+<!-- Skills Section -->
+<section class="skills" id="skills">
+  <h1 class="section-title">Skills</h1>
+  <p class="section-text">A showcase of my technical expertise and research experience.</p>
+  
+  
 
-      <section class="section skills" id="skills">
-        <div class="container">
+  <div class="skills-grid">
 
-          <p class="section-subtitle">My Skills</p>
+    <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Programming</h3>
+      <div class="skills-pill-container">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">C++</span>
+        <span class="skill-pill">MATLAB</span>
+      </div>
+    </div>
 
-          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+    <div class="skill-category">
+      <h3><i class="fas fa-brain"></i> AI / ML</h3>
+      <div class="skills-pill-container">
+        <span class="skill-pill">TensorFlow</span>
+        <span class="skill-pill">Keras</span>
+        <span class="skill-pill">3D Vision</span>
+        <span class="skill-pill">Ros</span>
+        <span class="skill-pill">Deep Learning</span>
+        <span class="skill-pill">Arduino</span>
+        <span class="skill-pill">OpenCV</span>
+        <span class="skill-pill">PyTorch</span>
+        <span class="skill-pill">Open3D</span>
+      </div>
+    </div>
 
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p>
+    <div class="skill-category">
+      <h3><i class="fas fa-flask"></i> Research</h3>
+      <div class="skills-pill-container">
+        <span class="skill-pill">Paper Writing</span>
+        <span class="skill-pill">Literature Review</span>
+    
+      </div>
+    </div>
 
-          <ul class="skills-list">
+    <div class="skill-category">
+      <h3><i class="fas fa-bolt"></i> Electrical</h3>
+      <div class="skills-pill-container">
+        <span class="skill-pill">Proteus</span>
+        <span class="skill-pill">Mutlisim</span>
+        <span class="skill-pill">Arduino</span>
+        <span class="skill-pill">gazebo</span>
+        <span class="skill-pill">QGC</span>
+        <span class="skill-pill">Pixhawk</span>
+        <span class="skill-pill">Jetson Nano</span>
+        <span class="skill-pill">Simulink</span>
+    
+      </div>
+    </div>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">Python</h3>
-
-                <data class="skills-data" value="95">95%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">TensorFlow</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 90%">
-                <h3 class="skills-title">MATLAB</h3>
-
-                <data class="skills-data" value="90">90%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 90%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">Keras</h3>
-
-                <data class="skills-data" value="70">70%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">C++</h3>
-
-                <data class="skills-data" value="80">80%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 80%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">Research</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-      <section class="section blog" id="blog">
-        <div class="container">
-
-          <p class="section-subtitle">Latest News</p>
-
-          <h2 class="h2 section-title">Checkout My Research</h2>
-
-          <p class="section-text">
-            Check out my publications and feel free to contact me for more details on them
-          </p>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/novel-heuristic-approach-to-detect-induced-forming-defects-using-point-cloud-scans/B25F8A90A40B196B3A288F92772C7D55?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark">
-                    <img src="./assets/images/Defect-Detection.png" width="400" height="900" loading="lazy"
-                      alt="Defect Detection " class="icon-link">
-                  </a>
-                </figure>
-
-                <a href="https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/novel-heuristic-approach-to-detect-induced-forming-defects-using-point-cloud-scans/B25F8A90A40B196B3A288F92772C7D55?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark" class="card-tag">3D Defect Identification and Classification</a>
-
-                <h3 class="card-title">
-                  <a href="https://www.cambridge.org/core/journals/proceedings-of-the-design-society/article/novel-heuristic-approach-to-detect-induced-forming-defects-using-point-cloud-scans/B25F8A90A40B196B3A288F92772C7D55?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark">A novel approach to detect industrial defects</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/hero-bg.jpg" width="1181" height="843" loading="lazy"
-                       class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Image Based Critical Region Identification and quantification</a>
-
-                <h3 class="card-title">
-                  <a href="#">Accepted and Published in Springer. DOI yet to come</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href=https://www.researchgate.net/publication/374061133_Optimising_Forming_Process_Behaviour_using_Artificial_Intelligence>
-                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
-                       class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="https://www.researchgate.net/publication/374061133_Optimising_Forming_Process_Behaviour_using_Artificial_Intelligence" class="card-tag">Optimizing Manufacturing for Critical Regions</a>
-
-                <h3 class="card-title">
-                  <a href="https://www.researchgate.net/publication/374061133_Optimising_Forming_Process_Behaviour_using_Artificial_Intelligence">Ai Based Process Optimization</a>
-                </h3>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
+  </div>
+</section>
 
       
 

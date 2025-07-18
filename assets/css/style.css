@@ -457,45 +457,66 @@ body {
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
-
-.skills .section-title { margin-block-end: 20px; }
-
-.skills .section-text { margin-block-end: 70px; }
-
-.skills-list {
-  display: grid;
-  gap: 25px;
-}
-
-.skills-item .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-block-end: 10px;
-}
-
-.skills-title,
-.skills-data {
+/* Section Titles */
+.skills .section-title {
+  margin-block-end: 20px;
+  font-size: 2rem;
   color: var(--white);
-  font-size: var(--fs-5);
-  font-family: var(--ff-barlow);
-  font-weight: var(--fw-600);
 }
 
-.skills-progress-box {
-  background-color: var(--white);
-  height: 8px;
-  border-radius: var(--radius-10);
+.skills .section-text {
+  margin-block-end: 40px;
+  color: #aaa;
 }
 
-.skills-progress {
-  background-color: var(--orange-soda);
-  height: 100%;
-  border-radius: inherit;
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
 
+/* Category Card */
+.skill-category {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
 
+/* Category Header with Icon */
+.skill-category h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+/* Skill Bubbles */
+.skills-pill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  padding: 8px 16px;                /* Slightly more padding for better spacing */
+  background-color: #1f1f1f;
+  border: 1px solid #444;
+  color: var(--white);
+  font-size: 1rem;                  /* 👈 Increased from 0.9rem to 1rem */
+  font-weight: 700;                /* 👈 Optional: make text a bit bolder */
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-pill:hover {
+  background-color: #333;
+}
 
 
 /*-----------------------------------*\
@@ -1201,6 +1222,95 @@ textarea.contact-input {
   }
   
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: var(--independence);
+  border-radius: var(--radius-15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-title {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.project-short {
+  color: var(--cadet-blue-crayola);
+}
+
+/* Modal styling */
+.project-modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.85);
+  padding-top: 100px;
+}
+
+.modal-content {
+  background-color: var(--space-cadet);
+  margin: auto;
+  padding: 30px;
+  border-radius: var(--radius-15);
+  max-width: 600px;
+  color: var(--white);
+}
+
+.close-modal {
+  color: var(--orange-soda);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tech-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: var(--orange-soda);
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: var(--ff-barlow);
+  transition: background-color 0.2s;
+}
+
+.tag:hover {
+  background-color: var(--klein-blue);
+}
 
 
 
