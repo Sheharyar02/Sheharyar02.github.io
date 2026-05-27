@@ -69,7 +69,7 @@ x`<!DOCTYPE html>
 
           
           <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Research</a>
+            <a href="https://scholar.google.com/citations?user=oV4_80kAAAAJ&hl=en" target="_blank" class="navbar-link">Research</a>
           </li>
 
           <li>
@@ -102,9 +102,7 @@ x`<!DOCTYPE html>
 
           <div class="hero-banner">
 
-            <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Sheharyar's Photo"
-              class="img-cover">
-
+            <img src="./assets/images/hero-banner.jpg" loading="lazy" alt="Sheharyar's Photo" class="img-cover">
             
 
 
@@ -125,7 +123,7 @@ x`<!DOCTYPE html>
             </h2>
 
             <p class="hero-text">
-              Hey. I work on different applications of Computer Vision and Robotics especially in the 3D Domain
+              I work on different applications of Computer Vision and Robotics especially in the 3D Domain
             </p>
 
             <!--<div class="btn-group">
@@ -175,17 +173,15 @@ x`<!DOCTYPE html>
 
           <div class="about-content">
 
-            <p class="section-subtitle">I'm an Engineer with a passion for Robotics and Software</p>
+            <p class="section-subtitle">I'm an Engineer with a passion for Robotics, AI and Computer Vision</p>
 
-            <h2 class="h2 section-title">I Develop Frameworks that Help People or Optimize Processes</h2>
-
-            <p class="section-text">
-            Hey, Sheharyar here, with over 2 years of experience designing research frameworks for clients including Mercedes and Faro. I am always looking out for more opportunities to contribute and develop amazing Tech !!  
-            </p>
+            <h2 class="h2 section-title">I Research, Develop and Implement Innovative Solutions in the Field of Robotics and Computer Vision</h2>
 
             <p class="section-text">
-             This website is still under Progress. Please bear it with me ^_^
+            Hey, Sheharyar here, with over 3.5 years of experience designing research frameworks for clients including Mercedes, Faro and Boeing. I am always looking out for more opportunities to research, contribute and develop amazing Tech !!  
             </p>
+
+            
 
             <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
 
@@ -210,21 +206,43 @@ x`<!DOCTYPE html>
 
     <div class="projects-grid">
 
+      <div class="project-card" data-project="autonomous driving">
+        <video class="project-image" autoplay loop muted playsinline>
+          <source src="./assets/images/output.webm" type="video/webm">
+        </video>
+        <div class="project-info">
+          <h3 class="h3 project-title">Autonomous Driving</h3>
+          <p class="project-short">Developed and Optimized Autonomous Driving Models.</p>
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">MMDET3d</span>
+            <span class="tag">3D Point Cloud</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Open3d</span>
+            <span class="tag">ROS</span>
+            
+          </div>
+        </div>
+      </div>
+
+
+
       <div class="project-card" data-project="defect">
         <img src="./assets/images/Defect.png" alt="Defect Detection" class="project-image">
         <div class="project-info">
           <h3 class="h3 project-title">Defect Detection in Manufacturing Lines</h3>
           <p class="project-short">AI-based defect classification on manufacturing data.</p>
           <div class="tech-tags">
-          <span class="tag">Python</span>
-          <span class="tag">OpenCV</span>
-          <span class="tag">Pywavelets</span>
-          <span class="tag">3D Point Cloud</span>
-          <span class="tag">TensorFlow</span>
-          <span class="tag">Open3d</span>
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Pywavelets</span>
+            <span class="tag">3D Point Cloud</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Open3d</span>
+          </div>
         </div>
       </div>
-    </div>
 
       <div class="project-card" data-project="critical">
         <img src="./assets/images/Critical.png" alt="Critical Region Identification" class="project-image">
@@ -336,6 +354,7 @@ x`<!DOCTYPE html>
         <span class="skill-pill">Python</span>
         <span class="skill-pill">C++</span>
         <span class="skill-pill">MATLAB</span>
+        <span class="skill-pill">ROS</span>
       </div>
     </div>
 
@@ -393,13 +412,41 @@ x`<!DOCTYPE html>
         <div class="container">
 
 
-          <h2 class="section-title">Timeline</h2>
-              <!-- October 2024 -->
+          <h2 class="section-title">My Journey</h2>
+              
+          
+          <!-- June 2025 -->
+              <div class="timeline-item">
+                <div class="timeline-header" data-toggle="dropdown">
+                  <span class="timeline-date">July 2025</span>
+                  <span class="timeline-title">Algorithm Engineer: 3D Perception</span>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="timeline-content" hidden>
+                  <p>
+                    As an algorithm engineer in the domain of 3D Perception, I am responsible for developing and optimizing algorithms for 3D perception tasks. This includes working on point cloud processing, 3D Object Detecion, Occupancy and Lane Detection. Additonally I am also responsible for the data preprocessing and ONNX converstion for embedded platforms as well. Notable accomplishments include improvement of mAP from 34.1% to 75.82% and mdoel quantization by maintaining ~96% accuracy while reducing model size by 46%. 
+                  </div>
+              </div>
+
+
+          <!-- June 2025 -->
+              <div class="timeline-item">
+                <div class="timeline-header" data-toggle="dropdown">
+                  <span class="timeline-date">June 2024-June 2025</span>
+                  <span class="timeline-title">Autonomous UGV Development - Undergraduate Thesis</span>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="timeline-content" hidden>
+                  <p>
+                    Developed an Autonomous UGV from scratch using a combination of AI and Embedded Systems. The UGV is equipped with a Pixhawk Flight Controller, Jetson Nano for onboard processing, and various sensors for navigation and obstacle avoidance. The project involved integrating ROS2 for communication and integrated SLAM for navigation. Being the Lead of the Project I was responsible for the overall design and management of the project. Additionally I also developed the onboard software including the perception and navigaiton pipeline on the UGV.   </p>
+                </div>
+              </div>
+          <!-- October 2024 -->
               <div class="timeline-item">
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">October 2024</span>
                   <span class="timeline-title">Project Shop Floor</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -413,7 +460,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">August 2024</span>
                   <span class="timeline-title">Represented Pakistan at Research Symposium Canada</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -426,7 +473,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">June–September 2024</span>
                   <span class="timeline-title">MITACS GRI Internship</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -440,7 +487,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">June 2024</span>
                   <span class="timeline-title">Published Research Paper (SCAP)</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -453,7 +500,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">May 2024</span>
                   <span class="timeline-title">Project 3D Synthetic Data Generation</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -467,7 +514,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">Feburary 2024</span>
                   <span class="timeline-title">Convergence</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -480,7 +527,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">December 2023</span>
                   <span class="timeline-title">Defect Detection Research Paper</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -497,7 +544,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">September 2023</span>
                   <span class="timeline-title">ML Lead at NUST Airworks</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -511,7 +558,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">March 2023</span>
                   <span class="timeline-title">Poster Presentation</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -527,7 +574,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">Feburary 2023</span>
                   <span class="timeline-title">Defect Detection Project</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -545,7 +592,7 @@ x`<!DOCTYPE html>
                 <div class="timeline-header" data-toggle="dropdown">
                   <span class="timeline-date">August 2022</span>
                   <span class="timeline-title">Represented Pakistan at Technofest</span>
-                  <button class="toggle-btn">Details</button>
+                  <i class="fas fa-chevron-down toggle-icon"></i>
                 </div>
                 <div class="timeline-content" hidden>
                   <p>
@@ -582,6 +629,17 @@ x`<!DOCTYPE html>
       
 
     </article>
+
+  <div class="video-modal" id="video-modal">
+    <div class="video-modal-content">
+      <span class="close-video-modal">&times;</span>
+      <video autoplay loop muted playsinline controls>
+        <source src="./assets/images/output.webm" type="video/webm">
+      </video>
+    </div>
+  </div>
+
+
   </main>
 
 

@@ -38,22 +38,21 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
 document.querySelectorAll("[data-toggle='dropdown']").forEach(header => {
   header.addEventListener("click", function () {
-    const content = this.nextElementSibling;  // Get the dropdown content (next sibling)
-    const btn = this.querySelector(".toggle-btn");  // Get the toggle button
-
-    // Toggle content visibility
+    const content = this.nextElementSibling;
+    const icon = this.querySelector(".toggle-icon");
+    
     if (content.hidden) {
-      content.hidden = false;  // Show the content
-      btn.textContent ="Collapse";  // Change button text to minus
+      content.hidden = false;
+      icon.classList.add("rotated");
     } else {
-      content.hidden = true;  // Hide the content
-      btn.textContent = "Details";  // Change button text to plus
+      content.hidden = true;
+      icon.classList.remove("rotated");
     }
   });
 });
-
 
 const projectDetails = {
   defect: {
@@ -102,3 +101,20 @@ window.addEventListener('click', (e) => {
   }
 });
 
+const videoModal = document.getElementById("video-modal");
+const closeVideoModal = document.querySelector(".close-video-modal");
+
+document.querySelector('[data-project="autonomous driving"]').addEventListener('click', (e) => {
+  e.stopPropagation();
+  videoModal.classList.add("active");
+});
+
+closeVideoModal.addEventListener('click', () => {
+  videoModal.classList.remove("active");
+});
+
+videoModal.addEventListener('click', (e) => {
+  if (e.target === videoModal) {
+    videoModal.classList.remove("active");
+  }
+});

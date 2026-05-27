@@ -317,8 +317,8 @@ body {
 }
 
 .hero-banner {
-  width: 150px;
-  height: 172px;
+  width: 300px;
+  height: 340px;
   background-color: var(--independence);
   border-radius: var(--radius-10);
   margin-inline: auto;
@@ -896,14 +896,14 @@ textarea.contact-input {
   }
 
   .hero-banner {
-    position: relative;
-    margin-block-end: 0;
-    order: 1;
-    width: 340px;
-    height: 390px;
-    margin-inline: 0;
-    margin-inline-start: auto;
-  }
+  position: relative;
+  margin-block-end: 0;
+  order: 1;
+  width: 500px;
+  height: 570px;
+  margin-inline: 0;
+  margin-inline-start: auto;
+}
 
   .elem {
     position: absolute;
@@ -1112,7 +1112,7 @@ textarea.contact-input {
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 
@@ -1123,6 +1123,17 @@ textarea.contact-input {
 
 .timeline-item:nth-child(even) {
   left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.timeline-item:nth-child(even) .timeline-header {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.timeline-item:nth-child(odd) .timeline-header {
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 .timeline-item::before {
@@ -1143,7 +1154,7 @@ textarea.contact-input {
 
 .timeline-title {
   font-family: var(--ff-poppins);
-  font-size: var(--fs-3);
+  font-size: var(--fs-5);
   color: var(--white);
   margin-bottom: 5px;
 }
@@ -1329,4 +1340,71 @@ textarea.contact-input {
   .copyright,
   .footer-list { margin-inline: 0; }
 
+
+
+
+}
+
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal-content {
+  position: relative;
+  width: auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.video-modal-content video {
+  width: auto;
+  height: 80vh;
+  max-width: 100%;
+  border-radius: var(--radius-15);
+  display: block;
+  margin: auto;
+}
+
+
+.close-video-modal {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: var(--white);
+  font-size: 36px;
+  cursor: pointer;
+}
+
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.toggle-icon {
+  color: var(--orange-soda);
+  transition: transform 0.3s ease;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+.toggle-icon.rotated {
+  transform: rotate(180deg);
 }
